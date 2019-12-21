@@ -54,6 +54,15 @@ nav a:hover {
     text-align: left;
 }
 
+#beer-section {
+    background: rgb(222,191,19);
+    background: linear-gradient(180deg, rgba(222,191,19,1) 0%, rgba(181,131,41,1) 50%, rgba(50,39,19,1) 83%, rgba(14,8,0,1) 100%);
+}
+
+.beer-title {
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     header h2 {
         font-size: 2.5rem;
@@ -70,6 +79,11 @@ nav a:hover {
     .hero-text h2 {
         font-size: 3.5rem;
         text-align: center;
+    }
+
+    #beer-section {
+        background: rgb(222,191,19);
+        background: linear-gradient(90deg, rgba(222,191,19,1) 0%, rgba(181,131,41,1) 50%, rgba(50,39,19,1) 83%, rgba(14,8,0,1) 100%);
     }
 }
 
