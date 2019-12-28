@@ -5,7 +5,7 @@ body, html {
 
 header h2, header p {
     font-family: 'Questrial', sans-serif;
-    color: white;
+    color: rgb(223, 238, 18);
     padding: 20px 5px 5px 5px;
     margin: 0 auto;
 }
@@ -28,17 +28,39 @@ nav a:hover {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/brewpub-hero.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/brewpub-hero.jpg"); */
     height: 100vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    backface-visibility: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    animation: slideshow 10s ease-in-out infinite;
 }
+
+/* ****  SLIDESHOW ANIMATION **** */
+
+@keyframes slideshow {
+    0%, 100% {
+        background-image: url("../images/brewpub-hero-gradient.jpg");
+        
+    }
+
+    33% {
+        background-image: url("../images/brewpub-hero2-gradient.jpg");
+    }
+
+    66% {
+        background-image: url("../images/brewpub-hero-3-gradient.jpg");
+    }
+}
+
+
 
 .hero-text {
     font-family: 'Questrial', sans-serif;
